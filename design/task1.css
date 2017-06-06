@@ -1,0 +1,74 @@
+/*This file contains all the styling code for Task 1*/
+
+/*Background image*/
+body{
+  background:
+  /* top, transparent black, faked with gradient */
+  linear-gradient(
+    rgba(0, 0, 0, 0.75),
+    rgba(0, 0, 0, 0.75)
+    ),
+    /* bottom, image */
+    url(images/bg.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+  /*Heading */
+  .heading{
+    font-family: 'Special Elite', cursive;
+    font-size: 3rem;
+    text-align: center;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    color: #B9D4DF;
+  }
+  /*Canvas*/
+  .literally{
+    width: 50%;
+    height: 200px;
+    margin: 0 auto;
+  }
+  /*Tools container*/
+  div.tools{
+    margin-top: 3%;
+  }
+  /*Each tool*/
+  #tool-pencil{
+    margin-left: 38%;
+  }
+  #tool-upload{
+    margin-left: 4%;
+  }
+  #tool-save{
+    margin-left: 4%;
+  }
+  .tools-a {
+    cursor: pointer;
+    color: #6496c8;
+    background: rgba(0,0,0,0);
+    border: solid 5px #6496c8;
+    padding: 1%;
+    font-size: 2rem;
+  }
+  .tools-a:hover,
+  .tools-a.hover {
+    border-color: #346392;
+    color: #346392;
+  }
+  .tools-a:active,
+  .tools-a.active {
+    border-color: #27496d;
+    color: #27496d;
+  }
+
+  /*Hiding default input file style*/
+  .inputfile {
+    width: 0.1px;
+    height: 0.1px;
+    opacity: 0;
+    overflow: hidden;
+    position: absolute;
+    z-index: -1;
+  }

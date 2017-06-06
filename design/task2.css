@@ -1,0 +1,47 @@
+/*This file contains all the styling code for Task 2*/
+
+/*Background image*/
+body{
+  background:
+  /* top, transparent black, faked with gradient */
+  linear-gradient(
+    rgba(0, 0, 0, 0.75),
+    rgba(0, 0, 0, 0.75)
+    ),
+    /* bottom, image */
+    url(images/bg-2.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+  /*Heading*/
+  .heading{
+    font-family: 'Pacifico', cursive;
+    font-size: 3rem;
+    text-align: center;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    color: #B9D4DF;
+  }
+  /*Select*/
+  #select-new {
+    padding: 1%;
+    cursor: pointer;
+    background: transparent;
+    color: linen;
+    margin-left: 45%;
+    margin-bottom: 1%;
+  }
+  #select-new>option{
+    background: black;
+  }
+  /*Editor*/
+  #mceu_1{
+    width: 50% !important;
+    margin: 0 auto;
+  }
+  /*Hiding the API error*/
+  .mce-widget{
+    display: none;
+  }
